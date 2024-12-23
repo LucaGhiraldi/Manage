@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\1\\12\\documenti_export_29-09-2024.xlsx",
+      "PackagePath": "staticwebassets\\uploads\\1\\12\\documenti_export_29-09-2024.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\1\\13\\Prova inserimento file (1).pdf",
+      "PackagePath": "staticwebassets\\uploads\\1\\13\\Prova inserimento file (1).pdf"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\1\\7\\Prova inserimento file.pdf",
+      "PackagePath": "staticwebassets\\uploads\\1\\7\\Prova inserimento file.pdf"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\1\\7\\Prova inserimento file.txt",
+      "PackagePath": "staticwebassets\\uploads\\1\\7\\Prova inserimento file.txt"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\1\\8\\Prova inserimento file.xlsx",
+      "PackagePath": "staticwebassets\\uploads\\1\\8\\Prova inserimento file.xlsx"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\1\\documenti_export_29-09-2024 (1).xlsx",
+      "PackagePath": "staticwebassets\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\1\\documenti_export_29-09-2024 (1).xlsx"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\2\\Immagine 2024-11-16 231842.png",
+      "PackagePath": "staticwebassets\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\2\\Immagine 2024-11-16 231842.png"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\3\\Prova inserimento file (1).xlsx",
+      "PackagePath": "staticwebassets\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\3\\Prova inserimento file (1).xlsx"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\3\\Prova inserimento file (4).pdf",
+      "PackagePath": "staticwebassets\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\3\\Prova inserimento file (4).pdf"
+    },
+    {
+      "Id": "C:\\Users\\lucag\\source\\repos\\ManageBE\\Manage\\wwwroot\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\8\\documenti_export_14-11-2024.xlsx",
+      "PackagePath": "staticwebassets\\uploads\\83a94258-4c2f-4b60-8eaf-73c463d13b31\\8\\documenti_export_14-11-2024.xlsx"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Manage.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.Manage.props",
+      "PackagePath": "build\\Manage.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.Manage.props",
+      "PackagePath": "buildMultiTargeting\\Manage.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.Manage.props",
+      "PackagePath": "buildTransitive\\Manage.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

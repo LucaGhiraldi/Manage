@@ -1,0 +1,25 @@
+<p-toast></p-toast>
+
+<div class="bodyValue">
+    <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="form-signin text-center">
+        <h1 class="h3 mb-3 font-weight-normal">Accesso al sistema</h1>
+        <label for="email" class="sr-only">Indirizzo email</label>
+        <input type="email" id="email" formControlName="email" class="form-control" placeholder="Indirizzo email" style="margin-bottom: 0.5rem;" autofocus>
+        <label for="password" class="sr-only">Password</label>
+        <input type="password" id="password" formControlName="password" class="form-control" placeholder="Password" required>
+        <div class="checkbox mb-3">
+            <label>
+                <input type="checkbox" value="remember-me"> Remember me
+            </label>
+        </div>
+        <div class="mb-3">
+            <label>
+                <a (click)="onGoToRegister()">
+                    Non hai un account nel sistema? Registrati ora cliccando qui
+                </a>
+            </label>
+        </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit" [disabled]="!loginForm.valid">Accedi</button>
+        <p class="mt-5 mb-3 text-muted">&copy; {{numberYearCurrent}} - {{numberYearNext}}</p>
+    </form>    
+</div>

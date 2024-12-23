@@ -1,0 +1,427 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\manage.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\manage.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\controllers\\filedocumenti\\filedocumenticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\controllers\\filedocumenti\\filedocumenticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\controllers\\documenti\\documenticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\controllers\\documenti\\documenticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\controllers\\categoriadocumenti\\categoriadocumenticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\controllers\\categoriadocumenti\\categoriadocumenticontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\networth\\base\\investimentobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\networth\\base\\investimentobase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\shared\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\shared\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\repository\\categoriadocumenti\\categoriadocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\repository\\categoriadocumenti\\categoriadocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\sottocategoriadocumenti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\sottocategoriadocumenti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\categoriadocumenti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\categoriadocumenti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\repository\\documenti\\documentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\repository\\documenti\\documentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\data\\documentidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\data\\documentidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\documenti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\documenti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\repository\\documenti\\idocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\repository\\documenti\\idocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\data\\categoriadocumentidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\data\\categoriadocumentidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\data\\sottocategoriadocumentidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\data\\sottocategoriadocumentidata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\request\\documentirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\request\\documentirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\request\\categoriadocumentirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\request\\categoriadocumentirequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\models\\request\\sottocategoriarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\models\\request\\sottocategoriarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\repository\\categoriadocumenti\\icategoriadocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\repository\\categoriadocumenti\\icategoriadocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\service\\documenti\\documentiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\service\\documenti\\documentiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\service\\documenti\\idocumentiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\service\\documenti\\idocumentiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|c:\\users\\lucag\\source\\repos\\manage\\managebe\\manage\\repository\\filedocumenti\\filedocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99B687E5-26CD-43C1-A7AC-B16D37C452C8}|Manage\\Manage.csproj|solutionrelative:manage\\repository\\filedocumenti\\filedocumentirepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriaDocumentiController.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Controllers\\CategoriaDocumenti\\CategoriaDocumentiController.cs",
+              "RelativeDocumentMoniker": "Manage\\Controllers\\CategoriaDocumenti\\CategoriaDocumentiController.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Controllers\\CategoriaDocumenti\\CategoriaDocumentiController.cs",
+              "RelativeToolTip": "Manage\\Controllers\\CategoriaDocumenti\\CategoriaDocumentiController.cs",
+              "ViewState": "AgIAAOoAAAAAAAAAAAAAAA8BAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:57:55.698Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DocumentiController.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Controllers\\Documenti\\DocumentiController.cs",
+              "RelativeDocumentMoniker": "Manage\\Controllers\\Documenti\\DocumentiController.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Controllers\\Documenti\\DocumentiController.cs",
+              "RelativeToolTip": "Manage\\Controllers\\Documenti\\DocumentiController.cs",
+              "ViewState": "AgIAAH0AAAAAAAAAAAAqwHUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T17:42:53.599Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CategoriaDocumentiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\CategoriaDocumenti\\CategoriaDocumentiRepository.cs",
+              "RelativeDocumentMoniker": "Manage\\Repository\\CategoriaDocumenti\\CategoriaDocumentiRepository.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\CategoriaDocumenti\\CategoriaDocumentiRepository.cs",
+              "RelativeToolTip": "Manage\\Repository\\CategoriaDocumenti\\CategoriaDocumentiRepository.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAQwL0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:56:09.664Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DocumentiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\Documenti\\DocumentiRepository.cs",
+              "RelativeDocumentMoniker": "Manage\\Repository\\Documenti\\DocumentiRepository.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\Documenti\\DocumentiRepository.cs",
+              "RelativeToolTip": "Manage\\Repository\\Documenti\\DocumentiRepository.cs",
+              "ViewState": "AgIAAMAAAAAAAAAAAAAUwOAAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T17:09:07.298Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Manage\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Manage\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAAAEsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:49:52.542Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\appsettings.json",
+              "RelativeDocumentMoniker": "Manage\\appsettings.json",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\appsettings.json",
+              "RelativeToolTip": "Manage\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-29T13:02:00.795Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Program.cs",
+              "RelativeDocumentMoniker": "Manage\\Program.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Program.cs",
+              "RelativeToolTip": "Manage\\Program.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAACYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T12:32:13.807Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Manage.http",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Manage.http",
+              "RelativeDocumentMoniker": "Manage\\Manage.http",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Manage.http",
+              "RelativeToolTip": "Manage\\Manage.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-12-23T11:22:15.424Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FileDocumentiController.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Controllers\\FileDocumenti\\FileDocumentiController.cs",
+              "RelativeDocumentMoniker": "Manage\\Controllers\\FileDocumenti\\FileDocumentiController.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Controllers\\FileDocumenti\\FileDocumentiController.cs",
+              "RelativeToolTip": "Manage\\Controllers\\FileDocumenti\\FileDocumentiController.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-21T12:34:49.571Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InvestimentoBase.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\NetWorth\\Base\\InvestimentoBase.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\NetWorth\\Base\\InvestimentoBase.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\NetWorth\\Base\\InvestimentoBase.cs",
+              "RelativeToolTip": "Manage\\Models\\NetWorth\\Base\\InvestimentoBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T17:33:16.433Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Shared\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Manage\\Shared\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Shared\\EmailSender.cs",
+              "RelativeToolTip": "Manage\\Shared\\EmailSender.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBcAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-05T12:29:02.201Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "DocumentiData.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Data\\DocumentiData.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Data\\DocumentiData.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Data\\DocumentiData.cs",
+              "RelativeToolTip": "Manage\\Models\\Data\\DocumentiData.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAMwBYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T07:59:24.986Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SottoCategoriaDocumenti.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\SottoCategoriaDocumenti.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\SottoCategoriaDocumenti.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\SottoCategoriaDocumenti.cs",
+              "RelativeToolTip": "Manage\\Models\\SottoCategoriaDocumenti.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:48:55.623Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CategoriaDocumenti.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\CategoriaDocumenti.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\CategoriaDocumenti.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\CategoriaDocumenti.cs",
+              "RelativeToolTip": "Manage\\Models\\CategoriaDocumenti.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBAAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:48:56.437Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Documenti.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Documenti.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Documenti.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Documenti.cs",
+              "RelativeToolTip": "Manage\\Models\\Documenti.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:49:06.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CategoriaDocumentiData.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Data\\CategoriaDocumentiData.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Data\\CategoriaDocumentiData.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Data\\CategoriaDocumentiData.cs",
+              "RelativeToolTip": "Manage\\Models\\Data\\CategoriaDocumentiData.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAAA9wBYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:58:00.435Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IDocumentiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\Documenti\\IDocumentiRepository.cs",
+              "RelativeDocumentMoniker": "Manage\\Repository\\Documenti\\IDocumentiRepository.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\Documenti\\IDocumentiRepository.cs",
+              "RelativeToolTip": "Manage\\Repository\\Documenti\\IDocumentiRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T11:46:11.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "SottoCategoriaDocumentiData.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Data\\SottoCategoriaDocumentiData.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Data\\SottoCategoriaDocumentiData.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Data\\SottoCategoriaDocumentiData.cs",
+              "RelativeToolTip": "Manage\\Models\\Data\\SottoCategoriaDocumentiData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:01:18.565Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SottoCategoriaRequest.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Request\\SottoCategoriaRequest.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Request\\SottoCategoriaRequest.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Request\\SottoCategoriaRequest.cs",
+              "RelativeToolTip": "Manage\\Models\\Request\\SottoCategoriaRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:29:26.233Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ICategoriaDocumentiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\CategoriaDocumenti\\ICategoriaDocumentiRepository.cs",
+              "RelativeDocumentMoniker": "Manage\\Repository\\CategoriaDocumenti\\ICategoriaDocumentiRepository.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\CategoriaDocumenti\\ICategoriaDocumentiRepository.cs",
+              "RelativeToolTip": "Manage\\Repository\\CategoriaDocumenti\\ICategoriaDocumentiRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T19:57:37.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CategoriaDocumentiRequest.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Request\\CategoriaDocumentiRequest.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Request\\CategoriaDocumentiRequest.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Request\\CategoriaDocumentiRequest.cs",
+              "RelativeToolTip": "Manage\\Models\\Request\\CategoriaDocumentiRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:28:32.942Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "DocumentiRequest.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Request\\DocumentiRequest.cs",
+              "RelativeDocumentMoniker": "Manage\\Models\\Request\\DocumentiRequest.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Models\\Request\\DocumentiRequest.cs",
+              "RelativeToolTip": "Manage\\Models\\Request\\DocumentiRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T07:56:15.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "DocumentiService.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Service\\Documenti\\DocumentiService.cs",
+              "RelativeDocumentMoniker": "Manage\\Service\\Documenti\\DocumentiService.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Service\\Documenti\\DocumentiService.cs",
+              "RelativeToolTip": "Manage\\Service\\Documenti\\DocumentiService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wCIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T11:45:20.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "IDocumentiService.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Service\\Documenti\\IDocumentiService.cs",
+              "RelativeDocumentMoniker": "Manage\\Service\\Documenti\\IDocumentiService.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Service\\Documenti\\IDocumentiService.cs",
+              "RelativeToolTip": "Manage\\Service\\Documenti\\IDocumentiService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T08:55:08.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "FileDocumentiRepository.cs",
+              "DocumentMoniker": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\FileDocumenti\\FileDocumentiRepository.cs",
+              "RelativeDocumentMoniker": "Manage\\Repository\\FileDocumenti\\FileDocumentiRepository.cs",
+              "ToolTip": "C:\\Users\\lucag\\source\\repos\\Manage\\ManageBE\\Manage\\Repository\\FileDocumenti\\FileDocumentiRepository.cs",
+              "RelativeToolTip": "Manage\\Repository\\FileDocumenti\\FileDocumentiRepository.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-28T20:45:47.76Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

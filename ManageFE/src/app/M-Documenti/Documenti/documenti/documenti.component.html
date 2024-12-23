@@ -1,0 +1,195 @@
+<p-panel header="Ricerca documenti" [toggleable]="true" [style]="{'padding-top': '1rem'}">
+
+    <form [formGroup]="formDocumentSearch" (ngSubmit)="onSubmitDocumentSearch()">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="Titolo">Titolo</label><br>
+                <input id="Titolo" formControlName="Titolo" pInputText style="width: 100%" />
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="Descrizione">Descrizione</label><br>
+                <input id="Descrizione" formControlName="Descrizione" pInputText style="width: 100%"/>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="DataCreazioneDocumento">Data creazione</label>
+                <p-calendar 
+                        formControlName="DataCreazioneDocumento"
+                        [iconDisplay]="'input'" 
+                        [showIcon]="true" 
+                        inputId="icondisplay" 
+                        [style]="{'width':'100%'}" 
+                        dateFormat="dd/mm/yy"
+                        [showTime]="false"
+                        hourFormat="24"
+                        timeOnly="false"/>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="DataInserimentoDocumento">Data inserimento</label>
+                <p-calendar 
+                        formControlName="DataInserimentoDocumento"
+                        [iconDisplay]="'input'" 
+                        [showIcon]="true" 
+                        inputId="icondisplay" 
+                        [style]="{'width':'100%'}" 
+                        dateFormat="dd/mm/yy"
+                        [showTime]="false"
+                        hourFormat="24"
+                        timeOnly="false"/>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="CategoriaDocumentiId">Categoria</label>
+                <!-- <p-dropdown 
+                        [options]="categoriesValue" 
+                        formControlName="CategoriaDocumentiId"
+                        optionLabel="nomeCategoria"
+                        optionValue="id"
+                        [showClear]="true"
+                        [style]="{'width':'100%'}" >
+                </p-dropdown> -->
+                <p-dropdown 
+                    [options]="groupedCategorie" 
+                    formControlName="SottoCategoriaDocumentiId"
+                    [showClear]="true"
+                    [style]="{'width':'100%'}" 
+                    [group]="true">
+                    <ng-template let-group pTemplate="group">
+                        <div class="flex align-items-center">
+                            <span>{{ group.label }}</span>
+                        </div>
+                    </ng-template>
+                </p-dropdown>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12" style="text-align: right;">
+                <button pButton pRipple type="submit" label="Cerca" rounded="true" raised="true" class="button-space rounded-button">
+                    <i class="fa-solid fa-search" style="margin-right: 0.5rem;"></i>
+                </button>
+                <button pButton pRipple type="button" label="Pulisci" rounded="true" raised="true" severity="warning" (click)="clearForm()" class="rounded-button">
+                    <i class="fa-solid fa-broom" style="margin-right: 0.5rem;"></i>
+                </button>
+            </div>
+
+        </div>
+    </form>
+
+</p-panel>
+
+<br>
+
+<div *ngIf="loading" class="loading-message">
+    <p-messages [(value)]="messaggioCaricamento" [closable]="false" />
+</div>
+
+<div *ngIf="!loading && !successLoading" class="loading-message">
+    <p-messages [(value)]="messaggioErrore" [closable]="false" />
+</div>
+
+<!-- currentPageReportTemplate="Visualizzando {first} di {last} dei {totalRecords} totali" -->
+<div class="mb-2">
+    <p-table
+        *ngIf="!loading && successLoading"
+        [value]="documenti" 
+        styleClass="p-datatable-striped" 
+        [tableStyle]="{ 'min-width': '50rem' }" 
+        sortMode="multiple" 
+        [rows]="5"
+        [paginator]="true"
+        [showCurrentPageReport]="true" >
+
+        <ng-template pTemplate="caption">
+            <div class="button-container">
+
+                <div class="button-pair">
+                    <button pButton pRipple type="button" label="Documento" rounded="true" raised="true"
+                            class="rounded-button" (click)="onGoToNewDocumento()" style="margin-right: 1rem;">
+                        <i class="fa-solid fa-plus" style="margin-right: 0.5rem;"></i>
+                    </button>
+                    <button pButton pRipple type="button" label="Categoria" rounded="true" raised="true"
+                            class="rounded-button" (click)="onGoToCategoria()" >
+                        <i class="fa-solid fa-plus" style="margin-right: 0.5rem;"></i>
+                    </button>
+                </div>
+
+                <button pButton pRipple type="button" label="Esporta tutto" rounded="true" raised="true"
+                        class="rounded-button" (click)="onExportExcel()" [disabled]="documenti.length == 0">
+                    <i class="fa-solid fa-download" style="margin-right: 0.5rem;"></i>
+                </button>
+
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="titolo" style="text-align: left;">
+                    Titolo <p-sortIcon field="titolo" />
+                </th>
+                <th pSortableColumn="descrizione" style="text-align: left;">
+                    Descrizione <p-sortIcon field="descrizione" />
+                </th>
+                <th pSortableColumn="dataCreazioneDocumento" style="text-align: center;">
+                    Data creazione <p-sortIcon field="dataCreazioneDocumento" />
+                </th>
+                <th pSortableColumn="dataInserimentoDocumento" style="text-align: center;">
+                    Data inserimento <p-sortIcon field="dataInserimentoDocumento" />
+                </th>
+                <th pSortableColumn="nomeCategoriaDocumenti" style="text-align: left;">
+                    Categoria <p-sortIcon field="nomeCategoriaDocumenti" />
+                </th>
+                <th pSortableColumn="nomeSottoCategoriaDocumenti" style="text-align: left;">
+                    Sotto categoria <p-sortIcon field="nomeSottoCategoriaDocumenti" />
+                </th>
+                <th pSortableColumn="nomiFiles" style="text-align: left;">
+                    Files <p-sortIcon field="nomiFiles" />
+                </th>
+                <th style="text-align: center;"></th>
+            </tr>
+        </ng-template>
+
+    <ng-template pTemplate="body" let-documento>
+        <tr>
+            <td style="text-align: left;">{{ documento.titolo }}</td>
+            <td style="text-align: left;">{{ documento.descrizione }}</td>
+            <td style="text-align: center;">{{ documento.dataCreazioneDocumento | date: 'dd/MM/yyyy HH:mm' }}</td>
+            <td style="text-align: center;">{{ documento.dataInserimentoDocumento | date: 'dd/MM/yyyy HH:mm' }}</td>
+            <td style="text-align: left;">{{ documento.nomeCategoriaDocumenti }}</td> <!-- Aggiorna con il campo corretto per Categoria -->
+            <td style="text-align: left;">{{ documento.nomeSottoCategoriaDocumenti }}</td> <!-- Aggiorna con il campo corretto per sotto Categoria -->
+            <!-- Colonna per array di file ID -->
+            <td style="text-align: left;">
+                <ng-container *ngIf="documento.nomiFiles?.length > 0;">
+                <ul style="padding-left: 0;">
+                    <li *ngFor="let nomeFiles of documento.nomiFiles">{{ nomeFiles }}</li>
+                </ul>
+                </ng-container>
+            </td>
+
+            <td style="text-align: center;">
+                <button pButton pRipple type="button" rounded="true" raised="true" severity="primary" 
+                        class="rounded-button" style="align-content: center;" (click)="onGoToDocumento(documento.id)" >
+                    <i class="fa-solid fa-eye"></i>
+                </button>
+                <!-- <a type="button" style="align-content: center;" (click)="onGoToDocumento(documento.id)">
+                    <i class="fa-solid fa-eye" style="font-size: 2rem; color: #3B82F6;"></i>
+                </a> -->
+            </td>
+        </tr>
+    </ng-template>
+
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="5" class="text-center">Nessun documento trovato.</td>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="summary">
+            <div class="flex align-items-center justify-content-between">
+                In totale ci sono {{ documenti ? documenti.length : 0 }} documenti.
+            </div>
+        </ng-template>
+
+    </p-table>
+</div>

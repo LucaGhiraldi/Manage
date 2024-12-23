@@ -1,0 +1,62 @@
+<p-toast></p-toast>
+
+<div id="body-pd" class="sidebar">
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <!-- <i class='bx bx-menu' id="header-toggle"></i> -->
+            <a id="header-toggle" (click)="onClickSideBar()">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+            <!-- <button id="header-toggle" (click)="onClick()"></button> -->
+        </div>
+
+        <div>
+            <p-breadcrumb [model]="breadcrumbs"></p-breadcrumb>
+        </div>
+
+        <div class="flex justify-content-center">
+            <a (click)="menu.toggle($event)" >
+                <i class="fa-solid fa-user"></i>
+            </a>
+            <p-menu #menu [model]="items" [popup]="true" />
+        </div>
+
+        <!-- <div class="card flex justify-content-center">
+            <p-button (onClick)="toggleMenu($event)" icon="pi pi-ellipsis-v"/>
+            <p-menu #menu [model]="items" [popup]="true" />
+        </div> -->
+
+        <!-- <div class="btn-group dropleft">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropleft
+            </button>
+            <div class="dropdown-menu">
+            </div>
+          </div> -->
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a class="nav__logo" [routerLink]="['/Home']" [routerLinkActive]="['active']" [routerLinkActiveOptions]="{ exact: true }">
+                    <i class="fa-solid fa-people-roof"></i>
+                    <span class="nav__logo-name">MANAGE</span>
+                </a>
+
+                <div class="nav__list">
+                    <a class="nav__link" [routerLink]="['/Documenti']" [routerLinkActive]="['active']" >
+                        <i class="fa fa-table nav__icon"></i>
+                        <span class="nav__name">Documenti</span>
+                    </a>
+                </div>
+            </div>
+
+            <a (click)="logout()" class="nav__link">
+                <i class="fa-solid fa-right-from-bracket"></i>
+                <span class="nav__name">Log Out</span>
+            </a>
+        </nav>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>

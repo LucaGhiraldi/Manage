@@ -1,0 +1,24 @@
+.fieldSearch {
+    width: 100%;
+    height: 3rem;       /* Imposta l'altezza dell'input */
+    padding-top: 0.4rem;  /* Spingi il testo verso il basso */
+    padding-bottom: 0.2rem; /* Per bilanciare lo spazio sotto */
+    padding-left: 0.5rem; /* Per bilanciare lo spazio sotto */
+    font-size: 1.2rem;      /* Dimensione del testo */
+    border: 1px solid #ccc; /* Bordi grigi */
+    border-radius: 5px;
+    color: #67717d;
+}
+
+.fieldSearch:disabled {
+    background-color: white !important; /* Cambia lo sfondo a bianco */
+    color: #9fa8b4; /* Assicura che il testo sia leggibile su sfondo bianco */
+    opacity: 1; /* Mantieni l'opacità normale per un campo disabilitato */
+    cursor: not-allowed; /* Mantieni il cursore per indicare che il campo è disabilitato */
+    border: 1px solid #ccc; /* Bordi grigi */
+    border-radius: 5px;
+}
+
+.rounded-button {
+    border-radius: 5px;  /* Imposta un raggio di bordi elevato per arrotondare */
+}

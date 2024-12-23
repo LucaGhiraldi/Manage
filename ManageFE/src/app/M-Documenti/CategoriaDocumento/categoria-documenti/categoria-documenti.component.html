@@ -1,0 +1,99 @@
+<p-toast></p-toast>
+<p-confirmDialog />
+
+<div style="padding-top: 1rem; padding-bottom: 1rem;">
+    <p-toolbar>
+
+        <div class="p-toolbar-group-start">
+            <button pButton pRipple type="button" label="Indietro" rounded="true" raised="true" (click)="goBack()" class="rounded-button">
+                <i class="fa-solid fa-arrow-left" style="margin-right: 0.5rem;"></i>
+            </button>
+        </div>
+    
+        <div class="p-toolbar-group-end">
+            <h1>Categoria</h1>
+        </div>
+    
+    </p-toolbar>
+</div>
+
+<div *ngIf="loading" class="loading-message">
+    <p-messages [(value)]="messaggioCaricamento" [closable]="false" />
+</div>
+
+<div *ngIf="!loading && !successLoading" class="loading-message">
+    <p-messages [(value)]="messaggioErrore" [closable]="false" />
+</div>
+
+<p-table *ngIf="!loading && successLoading"
+            [value]="categoriesValue" 
+            styleClass="p-datatable-striped" 
+            [tableStyle]="{ 'min-width': '50rem' }" 
+            sortMode="multiple" 
+            [rows]="5"
+            [paginator]="true"
+            [showCurrentPageReport]="true" >
+
+    <ng-template pTemplate="caption">
+        <div class="button-container">
+            <button pButton pRipple type="button" label="Inserisci" rounded="true" raised="true"
+                    class="rounded-button" (click)="onGoToNewCategoryDialog()">
+                <i class="fa-solid fa-plus" style="margin-right: 0.5rem;"></i>
+            </button>
+        </div>
+    </ng-template>
+    
+    <ng-template pTemplate="header">
+        <tr>
+            <th pSortableColumn="nomeCategoria" style="text-align: left;"> Nome categoria <p-sortIcon field="titolo"/> </th>
+            <th pSortableColumn="descrizioneCategoria" style="text-align: left;"> Descrizione Categoria <p-sortIcon field="titolo"/> </th>
+            <th pSortableColumn="dataInserimentoCategoria" style="text-align: center;"> Data Inserimento Categoria <p-sortIcon field="titolo"/> </th>
+            <th pSortableColumn="isPredefinita" style="text-align: center;"> Predefinita <p-sortIcon field="titolo"/> </th>
+            <th style="text-align: center;"> </th>
+            <th style="text-align: center;"> </th>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="body" let-category>
+        <tr>
+            <td style="text-align: left;">{{ category.nomeCategoria }}</td>
+            <td style="text-align: left;">{{ category.descrizioneCategoria }}</td>
+            <td style="text-align: center;">{{ category.dataInserimentoCategoria | date: 'dd/MM/yyyy HH:mm' }}</td>
+            <td style="text-align: center;">{{ category.isPredefinita ? 'Sì' : 'No' }}</td>
+    
+            <td style="text-align: center;">
+                <button pButton pRipple type="button" rounded="true" raised="true" severity="primary" 
+                        [disabled]="category.isPredefinita" class="rounded-button" style="align-content: center;" (click)="onGoToModifyCategoryDialog(category.id)" >
+                    <i class="fa-solid fa-pencil"></i>
+                </button>
+            </td>
+            <td style="text-align: center;">
+                <button pButton pRipple type="button" rounded="true" raised="true" severity="danger" 
+                        [disabled]="category.isPredefinita" class="rounded-button" style="align-content: center;" (click)="onOpenDialogDelete($event, category.id)" >
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </td>
+        </tr>
+    </ng-template>
+    
+    <ng-template pTemplate="emptymessage">
+        <tr>
+            <td colspan="5" class="text-center">Nessuna categoria trovato.</td>
+        </tr>
+    </ng-template>
+
+    <ng-template pTemplate="summary">
+        <div class="flex align-items-center justify-content-between">
+            In totale ci sono {{ categoriesValue ? categoriesValue.length : 0 }} categorie.
+        </div>
+    </ng-template>
+</p-table>
+
+<p-dialog [modal]="true" [maximizable]="true" [(visible)]="visibleInsertModifyCategory" [header]="titoloDialog" 
+            [style]="{ width: 'auto' }" [breakpoints]="{ '1199px': '85vw', '575px': '90vw' }">
+             
+    <app-categoria-documenti-detail [categoryValueData]="categoryValue" [idCategoria]="idCategoria" 
+                                    (onSaveCategoryValue)="onSaveCategory($event)" (onCloseDialogValue)="onCloseDialog($event)">
+    </app-categoria-documenti-detail>
+
+</p-dialog>

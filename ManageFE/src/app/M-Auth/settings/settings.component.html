@@ -1,0 +1,42 @@
+<p-toast></p-toast>
+<p-confirmDialog />
+
+<div>
+    <p-messages *ngIf="this.User.isEmailConfirmed"  [(value)]="messaggioVerificaEmailConferma" [closable]="false" />
+    <p-messages *ngIf="!this.User.isEmailConfirmed" [(value)]="messaggioVerificaEmailErrore" [closable]="false" />
+</div>
+
+<p-panel header="Credenziali utente">
+    
+    <div class="row">
+
+        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 1.5rem;">
+            <label >Email utente</label><br>
+            <p-inputGroup>
+                <input id="email" type="text" [(ngModel)]="this.User.email" pInputText [style]="{'width':'100%'}" [disabled]="true"/>
+                <button type="button" pButton severity="success" label="Verifica" class="ml-1 mr-1" [disabled]="this.User.isEmailConfirmed"></button>
+                <button type="button" pButton label="Modifica"></button>
+            </p-inputGroup>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 1.5rem;">
+            <label >Password utente</label><br>
+            <p-inputGroup>
+                <input id="password" type="password"  pInputText [style]="{'width':'100%'}" />
+                <button type="button" pButton label="Modifica" class="ml-1"></button>
+            </p-inputGroup>
+        </div>
+
+    </div>
+
+</p-panel>
+<br>
+<p-panel header="Dati utente">
+
+    <!-- Nome utente -->
+
+    <!-- Cognome utente -->
+
+    <!-- Data creazione utente -->
+
+</p-panel>

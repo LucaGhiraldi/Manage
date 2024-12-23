@@ -1,0 +1,121 @@
+<p-toast></p-toast>
+<p-confirmDialog />
+
+<form [formGroup]="categoryForm" (ngSubmit)="onSaveCategory()">
+
+    <div class="row">
+
+        <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 1.5rem;">
+            <label for="nomeCategoria">Nome</label><br>
+            <input id="nomeCategoria" type="text" formControlName="nomeCategoria" pInputText [style]="{'width':'100%'}"/>
+        </div>
+        <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 1.5rem;">
+            <label for="dataInserimentoCategoria">Data</label><br>
+            <p-calendar formControlName="dataInserimentoCategoria"
+                [iconDisplay]="'input'" 
+                [showIcon]="true" 
+                inputId="icondisplay" 
+                [style]="{'width':'100%'}" 
+                dateFormat="dd/mm/yy"
+                [showTime]="true"
+                hourFormat="24"
+                timeOnly="false" />
+        </div>
+        <div class="col-lg-12 col-md-12 col-sm-12" style="padding-bottom: 1.5rem;">
+            <label for="descrizioneCategoria">Descrizione</label><br>
+            <input id="descrizioneCategoria" type="text" formControlName="descrizioneCategoria" pInputText [style]="{'width':'100%'}"/>
+        </div>
+
+        <div class="col-lg-12 col-md-12 col-sm-12 button-label" style="text-align: right;">
+            <button pButton pRipple type="submit" label="Salva" rounded="true" raised="true" severity="success" 
+                    [disabled]="(!categoryForm.valid || sottoCategoriesValueResponse.length === 0)" class="rounded-button" style="margin-right: 1rem;" >
+                <i class="fa-solid fa-check" style="margin-right: 0.5rem;"></i>
+            </button>
+            <button pButton pRipple type="button" label="Chiudi" rounded="true" raised="true" severity="danger" 
+                    class="rounded-button" (click)="onCloseDialog()">
+                <i class="fa-solid fa-xmark" style="margin-right: 0.5rem;"></i>
+            </button>
+        </div>
+
+    </div>
+
+</form>
+
+    <p-table
+            [value]="sottoCategoriesValueResponse" 
+            styleClass="p-datatable-striped" 
+            [tableStyle]="{ 'min-width': '50rem' }" 
+            [style]="{'padding-top': '1rem'}"
+            sortMode="multiple" 
+            [rows]="5"
+            [paginator]="true"
+            [showCurrentPageReport]="true" 
+            dataKey="id" editMode="row" >
+
+        <ng-template pTemplate="caption">
+            <div class="button-container">
+                <button pButton pRipple type="button" label="Inserisci" rounded="true" raised="true"
+                        class="rounded-button" (click)="onCreateNewSottoCategoria()">
+                    <i class="fa-solid fa-plus" style="margin-right: 0.5rem;"></i>
+                </button>
+            </div>
+        </ng-template>
+        
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="nomeSottoCategoria" style="text-align: left;"> Nome sotto categoria <p-sortIcon field="titolo"/> </th>
+                <th pSortableColumn="descrizioneSottoCategoria" style="text-align: left;"> Descrizione sotto categoria <p-sortIcon field="titolo"/> </th>
+                <th pSortableColumn="dataInserimentoSottoCategoria" style="text-align: center;"> Data inserimento sotto categoria <p-sortIcon field="titolo"/> </th>
+                <th></th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-subCategory let-editing="editing" > 
+            <tr >
+
+                <td style="text-align: left;" [pEditableColumn]="subCategory.nomeSottoCategoria" pEditableColumnField="nomeSottoCategoria" >
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input id="nomeSottoCategoria" type="text" [(ngModel)]="subCategory.nomeSottoCategoria" pInputText [style]="{'width':'100%'}"/>
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{subCategory.nomeSottoCategoria}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td style="text-align: left;" [pEditableColumn]="subCategory.descrizioneSottoCategoria" pEditableColumnField="descrizioneSottoCategoria" >
+                    <p-cellEditor>
+                        <ng-template pTemplate="input">
+                            <input id="descrizioneSottoCategoria" type="text" [(ngModel)]="subCategory.descrizioneSottoCategoria" pInputText [style]="{'width':'100%'}"/>
+                        </ng-template>
+                        <ng-template pTemplate="output">
+                            {{subCategory.descrizioneSottoCategoria}}
+                        </ng-template>
+                    </p-cellEditor>
+                </td>
+
+                <td style="text-align: center;">{{ subCategory.dataInserimentoSottoCategoria | date: 'dd/MM/yyyy HH:mm' }}</td>
+
+                <td style="text-align: center;">
+                    <button pButton pRipple type="button" rounded="true" raised="true" severity="danger" class="rounded-button" 
+                            (click)="onOpenDialogDeleteSubCategory($event, subCategory.id)">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </td>
+
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="5" class="text-center">Nessuna sotto categoria trovata.</td>
+            </tr>
+        </ng-template>
+    
+        <ng-template pTemplate="summary">
+            <div class="flex align-items-center justify-content-between">
+                In totale ci sono {{ sottoCategoriesValueResponse ? sottoCategoriesValueResponse.length : 0 }} sotto categorie.
+            </div>
+        </ng-template>
+
+    </p-table>

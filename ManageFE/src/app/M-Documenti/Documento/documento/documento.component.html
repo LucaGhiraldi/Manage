@@ -1,0 +1,224 @@
+<p-toast></p-toast>
+<p-confirmDialog />
+
+<div style="padding-top: 1rem;">
+    <p-toolbar>
+
+        <div class="p-toolbar-group-start">
+            <button pButton pRipple type="button" label="Indietro" rounded="true" raised="true" (click)="goBack()" class="rounded-button">
+                <i class="fa-solid fa-arrow-left" style="margin-right: 0.5rem;"></i>
+            </button>
+        </div>
+    
+        <div class="p-toolbar-group-center">
+            <h1>Documento</h1>
+        </div>
+    
+        <div class="p-toolbar-group-end" *ngIf="this.idDocumento > 0">
+            <div style="display: flex; flex-direction: column; align-items: center;">
+                <label for="checked" style="margin-bottom: 0.5rem; font-size: 1.2rem;">Modifica documento</label>
+                <p-inputSwitch [(ngModel)]="checked" (onChange)="onCheckedChange($event)"></p-inputSwitch>
+            </div>
+        </div>
+    
+    </p-toolbar>
+</div>
+
+<div *ngIf="loadingDocumento" class="loading-message">
+    <p-messages [(value)]="messaggioCaricamento" [closable]="false" />
+</div>
+
+<div *ngIf="!loadingDocumento && !successLoadingDocumento" class="loading-message">
+    <p-messages [(value)]="messaggioErrore" [closable]="false" />
+</div>
+
+<p-panel header="Informazioni generali del documento" [toggleable]="true" [style]="{'padding-top': '1rem'}" *ngIf="!loadingDocumento && successLoadingDocumento">
+
+    <!-- Dati generali documento -->
+    <form [formGroup]="formDocumento" (ngSubmit)="onSubmitDocumento()">
+        <div class="row">
+
+            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="Titolo">Titolo</label>
+                <input id="Titolo" formControlName="Titolo" pInputText class="fieldSearch"/>
+            </div>
+
+            <div class="col-lg-6 col-md-6 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="Descrizione">Descrizione</label>
+                <input id="Descrizione" formControlName="Descrizione" pInputText class="fieldSearch" />
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="DataCreazioneDocumento">Data creazione</label>
+                <p-calendar 
+                        formControlName="DataCreazioneDocumento"
+                        [iconDisplay]="'input'" 
+                        [showIcon]="true" 
+                        inputId="icondisplay" 
+                        [style]="{'width':'100%'}" 
+                        dateFormat="dd/mm/yy"
+                        [showTime]="true"
+                        hourFormat="24"
+                        timeOnly="false"/>
+            </div>
+            
+            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="DataInserimentoDocumento">Data inserimento</label>
+                <p-calendar 
+                        formControlName="DataInserimentoDocumento"
+                        [iconDisplay]="'input'" 
+                        [showIcon]="true" 
+                        inputId="icondisplay" 
+                        [style]="{'width':'100%'}" 
+                        dateFormat="dd/mm/yy"
+                        [showTime]="true"
+                        hourFormat="24"
+                        timeOnly="false"/>
+            </div>
+
+            <div class="col-lg-4 col-md-4 col-sm-12" style="padding-bottom: 1.5rem;">
+                <label for="CategoriaDocumentiId">Categoria</label>
+                <!-- <p-dropdown 
+                        [options]="categoriesValue" 
+                        formControlName="CategoriaDocumentiId"
+                        optionLabel="nomeCategoria"
+                        optionValue="id"
+                        [showClear]="true"
+                        [style]="{'width':'100%'}" >
+                </p-dropdown> -->
+                <p-dropdown 
+                    [options]="groupedCategorie" 
+                    formControlName="SottoCategoriaDocumentiId"
+                    [showClear]="true"
+                    [style]="{'width':'100%'}" 
+                    [group]="true">
+                    <ng-template let-group pTemplate="group">
+                        <div class="flex align-items-center">
+                            <span>{{ group.label }}</span>
+                        </div>
+                    </ng-template>
+                </p-dropdown>
+            </div>
+
+            <div class="col-lg-12 col-md-12 col-sm-12 button-label" style="text-align: right;">
+                <button pButton pRipple type="submit" label="Salva" rounded="true" raised="true" severity="success" 
+                        [disabled]="(!checked || !formDocumento.valid)" class="rounded-button" style="margin-right: 1rem;">
+                    <i class="fa-solid fa-check" style="margin-right: 0.5rem;"></i>
+                </button>
+                <button pButton pRipple type="button" label="Elimina" rounded="true" raised="true" severity="danger" 
+                        [disabled]="!checked || this.idDocumento == 0" class="rounded-button" (click)="onOpenDialogDelete($event)" >
+                    <i class="fa-solid fa-xmark" style="margin-right: 0.5rem;"></i>
+                </button>
+            </div>
+
+        </div>
+    </form>
+
+</p-panel>
+
+<div *ngIf="loadingDocumento" class="loading-message">
+    <p-messages [(value)]="messaggioCaricamento" [closable]="false" />
+</div>
+
+<div *ngIf="!loadingDocumento && !successLoadingDocumento" class="loading-message">
+    <p-messages [(value)]="messaggioErrore" [closable]="false" />
+</div>
+
+<p-panel header="Informazioni dei file" [style]="{'padding-top': '1rem'}" *ngIf="!loadingFileDocumento && successLoadingFileDocumento">
+    
+    <!-- Tabella file documento -->
+    <!-- *ngIf="!loading && successLoading" -->
+    <!-- currentPageReportTemplate="Visualizzando {first} di {last} dei {totalRecords} totali" -->
+
+    <p-table
+        [value]="filesValue" 
+        styleClass="p-datatable-striped" 
+        [tableStyle]="{ 'min-width': '50rem' }" 
+        sortMode="multiple" 
+        [rows]="5"
+        [paginator]="true"
+        [showCurrentPageReport]="true" >
+
+        <ng-template pTemplate="caption">
+            <div class="button-container">
+
+                <div class="file-upload-container">
+                    <p-fileUpload 
+                        #fileUploader
+                        chooseLabel="Inserisci file"
+                        name="demo[]"
+                        mode="basic" 
+                        auto="true"
+                        multiple="true"
+                        (onSelect)="onFileSelect($event)"
+                        [maxFileSize]="1000000"
+                        [style]="{'border-radius': '5px', 'width': '100%', 'box-shadow': '0 3px 1px -2px rgba(0, 0, 0, 0.2),0 2px 2px 0 rgba(0, 0, 0, 0.14),0 1px 5px 0 rgba(0, 0, 0, 0.12)'}"
+                        [disabled]="!checked" > 
+                    </p-fileUpload>
+                </div>
+
+
+                <button pButton pRipple type="button" label="Scarica tutto" rounded="true" raised="true"
+                        class="rounded-button" (click)="getFileDocumentoDownloadByListId()" [disabled]="filesValueBackup.length == 0">
+                    <i class="fa-solid fa-download" style="margin-right: 0.5rem;"></i>
+                </button>
+
+            </div>
+        </ng-template>
+
+        <ng-template pTemplate="header">
+            <tr>
+                <th pSortableColumn="nomeFile" style="text-align: left;">
+                    Nome file <p-sortIcon field="nomeFile" />
+                </th>
+                <th pSortableColumn="estensioneFile" style="text-align: center;">
+                    Estensione file <p-sortIcon field="estensioneFile" />
+                </th>
+                <!-- <th pSortableColumn="percorsoFile" style="width:20%; text-align: center;">
+                    Percorso file <p-sortIcon field="percorsoFile" />
+                </th> -->
+                <th pSortableColumn="dataInserimentoFile" style="text-align: center;">
+                    Data inserimento <p-sortIcon field="dataInserimentoFile" />
+                </th>
+                <th style="text-align: center;"></th>
+                <th style="text-align: center;"></th>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="body" let-fileValue>
+            <tr>
+                <td style="text-align: left;">{{ fileValue.nomeFile }}</td>
+                <td style="text-align: center;">{{ fileValue.estensioneFile }}</td>
+                <!-- <td style="text-align: left;">{{ fileValue.percorsoFile }}</td> -->
+                <td style="text-align: center;">{{ fileValue.dataInserimentoFile | date: 'dd/MM/yyyy HH:mm' }}</td>
+        
+                <td style="text-align: center;">
+                    <button pButton pRipple type="button" rounded="true" raised="true" severity="success" *ngIf="!fileValue.isTemporary || fileValue.isTemporary == null" 
+                            class="rounded-button" (click)="onDownload(fileValue.id)">
+                        <i class="fa-solid fa-download" ></i>
+                    </button>
+                </td>
+
+                <td style="text-align: center;">
+                    <button pButton pRipple type="button" rounded="true" raised="true" severity="danger" [disabled]="!checked" class="rounded-button" (click)="onOpenDialogDeleteFile($event, fileValue.id)">
+                        <i class="fa-solid fa-trash"></i>
+                    </button>
+                </td>
+            </tr>
+        </ng-template>
+
+        <ng-template pTemplate="emptymessage">
+            <tr>
+                <td colspan="5" class="text-center">Nessun file trovato.</td>
+            </tr>
+        </ng-template>
+    
+        <ng-template pTemplate="summary">
+            <div style="display: flex; justify-content: space-between; flex-direction: row; width: 100%;">
+                <span>In totale ci sono {{ filesValue ? filesValue.length : 0 }} file.</span>
+                <span>Di cui {{ uploadedFiles ? uploadedFiles.length : 0 }} nuovi.</span>
+            </div>
+        </ng-template>
+
+    </p-table>
+</p-panel>
